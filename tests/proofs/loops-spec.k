@@ -17,6 +17,7 @@ module LOOPS-SPEC
            0 |-> < i32 > (I => 0)
            1 |-> < i32 > (X => X +Int ((I *Int (I +Int 1)) /Int 2))
          </locals>
+         <localIds> IDS:Map </localIds>
       requires #inUnsignedRange(i32, I)
        andBool I >Int 0
        andBool #inUnsignedRange(i32, X +Int I)
@@ -45,8 +46,10 @@ module LOOPS-SPEC
            0 |-> < i32 > (N => 0)
            1 |-> < i32 > (0 => (N *Int (N +Int 1)) /Int 2)
          </locals>
+         <localIds> IDS:Map </localIds>
+         <labelDepth> LD:Int </labelDepth>
+         <valstack> VS:ValStack </valstack>
       requires #inUnsignedRange(i32, N)
        andBool N >Int 0
        andBool #inUnsignedRange(i32, ((N *Int (N +Int 1)) /Int 2))
-
 endmodule

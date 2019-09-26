@@ -70,7 +70,7 @@ Any extension of the `Index` type requires that the function `#ContextLookup` is
 For `Int`, however, a the context is irrelevant and the index always just resolves to the integer.
 
 ```k
-    syntax Int ::= #ContextLookup ( Map , Index ) [function]
+    syntax Int ::= #ContextLookup ( Map , Index ) [function, functional]
  // --------------------------------------------------------
     rule #ContextLookup(IDS:Map, I:Int) => I
 ```

@@ -8,4 +8,6 @@ module LOCALS-SPEC
          <locals>
            X |-> < ITYPE > (VAL => VAL)
          </locals>
+         <valstack> VS:ValStack </valstack>
+         <localIds> IDS:Map </localIds>
 endmodule
